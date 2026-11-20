@@ -1,0 +1,31 @@
+# KITE configuration for UAV dataset
+data_dir: data/test_trajs
+train_list: data/splits/path_list_train_files.txt
+val_list: data/splits/path_list_val_files.txt
+test_list: data/splits/path_list_test_files.txt
+save_dir: checkpoints/kite/uav
+
+seq_len: 50
+pred_len: 20
+stride: 5
+dt: 0.1
+
+input_dim: 3
+hidden_dim: 64
+num_layers: 2
+dropout: 0.5
+use_kinematics: true
+use_sg_filter: true
+
+batch_size: 64
+epochs: 300
+lr: 0.001
+weight_decay: 0.0001
+patience: 25
+input_noise: 0.0
+seed: 42
+
+alpha_vel: 0.3
+alpha_cons: 0.1
+alpha_phys: 0.1
+error_threshold: 2.0

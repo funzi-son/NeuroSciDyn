@@ -1,0 +1,30 @@
+# KC-S2O configuration for UAV dataset
+data_dir: data/test_trajs
+train_list: data/splits/path_list_train_files.txt
+val_list: data/splits/path_list_val_files.txt
+test_list: data/splits/path_list_test_files.txt
+save_dir: checkpoints/kcs2o/uav
+
+seq_len: 50
+pred_len: 20
+stride: 10
+dt: 0.1
+
+input_dim: 3
+hidden_dim: 64
+num_layers: 3
+dropout: 0.2
+
+# Ablation toggles
+use_kinematic_prior: true
+use_time_weight: true
+loss_fn: smooth_l1
+use_isotropic_norm: true
+
+batch_size: 64
+epochs: 300
+lr: 0.001
+weight_decay: 0.00001
+patience: 30
+seed: 42
+error_threshold: 2.0

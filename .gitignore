@@ -1,0 +1,17 @@
+# Python / environments
+/venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Datasets & local caches (keep split lists tracked)
+/data/*
+!/data/splits/
+.cursor/
+.DS_Store
+
+# Demo app
+uav-forecasting-demo/node_modules/
+uav-forecasting-demo/dist/
