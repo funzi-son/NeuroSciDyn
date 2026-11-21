@@ -66,5 +66,6 @@ python run_experiment.py --method all --dataset uav --skip-train
 python run_experiment.py --method all --dataset all
 ```
 
-### Web Demo (UAV only)
+### Web Demo (UAV Trajectory Forecasting)
 
+[**Explore the Interactive Demo →**](https://funzi-son.github.io/NeuroSciDyn/)
